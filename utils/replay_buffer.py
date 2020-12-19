@@ -60,7 +60,7 @@ class ReplayBuffer:
         self.memory.append(exp)
 
     
-    def sample(self)
+    def sample(self):
         """ 
         
         Randomly sample an experience from the memory. 
