@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 import random
 from collections import namedtuple, deque
 
@@ -77,7 +78,7 @@ class ReplayBuffer:
         states = torch.from_numpy(states).float().to(self.device) # (float)
 
         actions = np.vstack([e.action for e in experiences if e is not None])
-        actions = torch.from_numpy(action).long().to(self.device) # (long)
+        actions = torch.from_numpy(actions).long().to(self.device) # (long)
 
         rewards = np.vstack([e.reward for e in experiences if e is not None])
         rewards = torch.from_numpy(rewards).float().to(self.device) # (float)
@@ -86,7 +87,7 @@ class ReplayBuffer:
         next_states = torch.from_numpy(next_states).float().to(self.device) # float
 
         dones = np.vstack([e.done for e in experiences if e is not None]).astype(np.uint8) # Make bool an int
-        dones = torch.from_numpy(dones).float().to(device)
+        dones = torch.from_numpy(dones).float().to(self.device)
 
         return (states, actions, rewards, next_states, dones)
 
