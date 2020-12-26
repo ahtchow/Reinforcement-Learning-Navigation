@@ -1,4 +1,4 @@
-# Project 1: Navigation
+# Solving Navigation using Deep Reinforcement Learning (Value-Based Methods)
 
 ## Introduction
 
