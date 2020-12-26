@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The goal in this project is to create and train an agent to navigate and collect only yellow banana in a large, square world. By applying deep reinforcement learning to this environment, the agent essentially learns to collect only yellow bananas while avoiding blue ones. (I wouldnt get near a blue banana either :O) Read my blog on (Medium)[https://ahtchow.medium.com/solving-navigation-using-deep-reinforcement-learning-value-based-methods-3fe74fe85876] for this project!
+The goal in this project is to create and train an agent to navigate and collect only yellow banana in a large, square world. By applying deep reinforcement learning to this environment, the agent essentially learns to collect only yellow bananas while avoiding blue ones. (I wouldnt get near a blue banana either :O) Read my blog on [Medium](https://ahtchow.medium.com/solving-navigation-using-deep-reinforcement-learning-value-based-methods-3fe74fe85876) for this project!
 
 
 ![](./imgs/collecting_bananas.gif)
